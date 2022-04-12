@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Kampus Indonesia Academy</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="Assets/adminLTE/plugins/fontawesome-free/css/all.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Assets/adminLTE/dist/css/adminlte.min.css" />
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- jQuery -->
+    <script src="Assets/AdminLTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="Assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="Assets/AdminLTE/dist/js/adminlte.min.js"></script>
+</head>
+
+<body class="hold-transition layout-top-nav">
+    <div class="wrapper">
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+            <div class="container">
+                <!-- <a href="../../index3.html" class="navbar-brand">
+        <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+             style="opacity: .8">
+      </a> -->
+
+                <button class="navbar-toggler order-1" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+                    <!-- Left navbar links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="kelas.html" class="nav-link">Kelas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Panduan</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Right navbar links -->
+                <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+                    <!-- Messages Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                            <div class="d-flex">
+                                <i class="fas fa-user"></i>
+                                <p>Silahkan Masuk</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                            <div class="dropdown-divider"></div>
+                            <a href="login.html" class="dropdown-item">
+                                <i class="fas fa-sign-in-alt"></i></i> Login
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="register.html" class="dropdown-item">
+                                <i class="fas fa-registered"></i> Register
+                            </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Triviea -->
+    <div class="container-trivia-panduan">
+        <div class="text-center panduan">
+            <p class="title-home ">Panduan Kampus Indonesia Academy</p>
+            <p>Temukan jawaban dari permasalahan kamu disini</p>
+        </div>
+        <img class="img-bottom-panduan" src="Assets/images/panduan-bot.png">
+        <img class="img-top" src="Assets/images/panduan-top.png">
+        <img class="img-bottom-left-panduan" src="Assets/images/image-bottom.png">
+    </div>
+
+    <section class="content">
+        <div class="row mt-5">
+            <div class="col-5 col-sm-3">
+              <div class="nav flex-column nav-tabs h-100" id="vert-tabs-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="vert-tabs-home-tab" data-toggle="pill" href="#vert-tabs-home" role="tab" aria-controls="vert-tabs-home" aria-selected="true">Apa itu Kampus Indonesia Academy ?</a>
+                <a class="nav-link" id="vert-tabs-profile-tab" data-toggle="pill" href="#vert-tabs-profile" role="tab" aria-controls="vert-tabs-profile" aria-selected="false">Mendaftar</a>
+                <a class="nav-link" id="vert-tabs-messages-tab" data-toggle="pill" href="#vert-tabs-messages" role="tab" aria-controls="vert-tabs-messages" aria-selected="false">Akun</a>
+                <a class="nav-link" id="vert-tabs-settings-tab" data-toggle="pill" href="#vert-tabs-settings" role="tab" aria-controls="vert-tabs-settings" aria-selected="false">Cara Beli</a>
+                <a class="nav-link" id="vert-tabs-Refund-tab" data-toggle="pill" href="#vert-tabs-Refund" role="tab" aria-controls="vert-tabs-Refund" aria-selected="false">Refund</a>
+                <a class="nav-link" id="vert-tabs-Kelas-tab" data-toggle="pill" href="#vert-tabs-Kelas" role="tab" aria-controls="vert-tabs-Kelas" aria-selected="false">Kelas</a>
+                <a class="nav-link" id="vert-tabs-Kelas-Sertifikat" data-toggle="pill" href="#vert-tabs-Sertifikat" role="tab" aria-controls="vert-tabs-Sertifikat" aria-selected="false">Sertifikat</a>
+                <a class="nav-link" id="vert-tabs-Kelas-Instruktur" data-toggle="pill" href="#vert-tabs-Instruktur" role="tab" aria-controls="vert-tabs-Instruktur" aria-selected="false">Instruktur</a>
+                <a class="nav-link" id="vert-tabs-Kelas-Call" data-toggle="pill" href="#vert-tabs-Call" role="tab" aria-controls="vert-tabs-Call" aria-selected="false">Bagaimana Cara menghubungi Kampus Indonesia Academy</a>
+              </div>
+            </div>
+            <div class="col-7 col-sm-9">
+              <div class="tab-content" id="vert-tabs-tabContent">
+                <div class="tab-pane text-left fade show active" id="vert-tabs-home" role="tabpanel" aria-labelledby="vert-tabs-home-tab">
+                <div class="border-panduan">
+                        <h5 class="title-footer">Apa itu Kampus Indonesia Academy ?</h5>
+                        <p>Kampus Indonesia Academy merupakan wadah pembelajaran yang menawarkan pengalaman belajar yang menarik, diperuntukan bagi mahasiswa dan profesional yang ingin mengembangkan kemampuan diri dan karirnya. Dengan konsep kelas online, Kampus Indonesia Academy dikembangkan dengan teknologi canggih yang sama dengan course online lainnya.</p>
+                        <p>Kampus Indonesia Academy merupakan wadah kursus online yang hadir menjadi solusi untuk meningkatkan technical & soft skill di berbagai bidang yang dipersembahkan untuk para mahasiswa, profesional, dan umum. Mulai dari kelas bisnis hingga hobi, semua keterampilan tersedia di Kampus Indonesia Academy dan disampaikan langsung oleh para ahli di bidangnya. Kampus Indonesia Academy memungkinkan siapapun untuk meningkatkan skill mereka karena dapat dilakukan di mana saja dan kapan saja.</p>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="vert-tabs-profile" role="tabpanel" aria-labelledby="vert-tabs-profile-tab">
+                    <div class="border-panduan">
+                        <h5 class="title-footer">Cara Mendaftar Kampus Indonesia Academy</h5>
+                        <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.
+                        </p>
+                        <ol>
+                            <li>Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                            </li>
+                            <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah</li>
+                            <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                        </ol>
+                        
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="vert-tabs-messages" role="tabpanel" aria-labelledby="vert-tabs-messages-tab">
+                    <!-- tab -->
+                        <div class="card card-outline collapsed-card">
+                            <div class="card-header">
+                              <h3 class="card-title">Bagaimana cara mengganti nama profil di akun Skill Academy?</h3>
+                              <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                                </button>
+                              </div>
+                              <!-- /.card-tools -->
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                              <ol>
+                                  <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                                </li>
+                                  <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                                </li>
+                                  <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                              </ol>
+                            </div>
+                            <!-- /.card-body -->
+                          </div>
+                          <div class="card card-outline collapsed-card">
+                            <div class="card-header">
+                              <h3 class="card-title">Berapa banyak device yang dapat saya gunakan dengan satu akun?</h3>
+                              <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                                </button>
+                              </div>
+                              <!-- /.card-tools -->
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                              <ol>
+                                  <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                                </li>
+                                  <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                                </li>
+                                  <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                              </ol>
+                            </div>
+                            <!-- /.card-body -->
+                          </div>
+                          <div class="card card-outline collapsed-card">
+                            <div class="card-header">
+                              <h3 class="card-title">Mengapa akun saya tidak bisa diakses?</h3>
+                              <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                                </button>
+                              </div>
+                              <!-- /.card-tools -->
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                              <ol>
+                                  <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                                </li>
+                                  <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                                </li>
+                                  <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                              </ol>
+                            </div>
+                            <!-- /.card-body -->
+                          </div>
+                          <div class="card card-outline collapsed-card">
+                            <div class="card-header">
+                              <h3 class="card-title">Bagaimana cara masuk/login ke aplikasi Skill Academy?</h3>
+                              <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                                </button>
+                              </div>
+                              <!-- /.card-tools -->
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                              <ol>
+                                  <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                                </li>
+                                  <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                                </li>
+                                  <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                              </ol>
+                            </div>
+                            <!-- /.card-body -->
+                          </div>
+                          <div class="card card-outline collapsed-card">
+                            <div class="card-header">
+                              <h3 class="card-title">Bagaimana bila saya lupa kata sandi saya?</h3>
+                              <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                                </button>
+                              </div>
+                              <!-- /.card-tools -->
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                              <ol>
+                                  <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                                </li>
+                                  <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                                </li>
+                                  <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                              </ol>
+                            </div>
+                            <!-- /.card-body -->
+                          </div>
+                          <div class="card card-outline collapsed-card">
+                            <div class="card-header">
+                              <h3 class="card-title">Bagaimana mengubah kata sandi saya?</h3>
+                              <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                                </button>
+                              </div>
+                              <!-- /.card-tools -->
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                              <ol>
+                                  <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                                </li>
+                                  <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                                </li>
+                                  <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                              </ol>
+                            </div>
+                            <!-- /.card-body -->
+                          </div>
+                </div>
+                <div class="tab-pane fade" id="vert-tabs-settings" role="tabpanel" aria-labelledby="vert-tabs-settings-tab">
+                  <!-- tab -->
+                  <div class="card card-outline collapsed-card">
+                    <div class="card-header">
+                      <h3 class="card-title">Metode pembayaran apa saja yang dapat digunakan?</h3>
+                      <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                        </button>
+                      </div>
+                      <!-- /.card-tools -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                      <ol>
+                          <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                        </li>
+                          <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                        </li>
+                          <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                      </ol>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <div class="card card-outline collapsed-card">
+                    <div class="card-header">
+                      <h3 class="card-title">Apa harus saya lakukan ketika terjadi kesalahan dalam pembayaran?</h3>
+                      <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                        </button>
+                      </div>
+                      <!-- /.card-tools -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                      <ol>
+                          <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                        </li>
+                          <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                        </li>
+                          <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                      </ol>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <div class="card card-outline collapsed-card">
+                    <div class="card-header">
+                      <h3 class="card-title">Bagaimana cara menggunakan kode voucher?</h3>
+                      <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                        </button>
+                      </div>
+                      <!-- /.card-tools -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                      <ol>
+                          <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                        </li>
+                          <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                        </li>
+                          <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                      </ol>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <div class="card card-outline collapsed-card">
+                    <div class="card-header">
+                      <h3 class="card-title">Bagaimana cara membeli lebih dari satu kelas dalam satu transaksi?</h3>
+                      <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                        </button>
+                      </div>
+                      <!-- /.card-tools -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                      <ol>
+                          <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                        </li>
+                          <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                        </li>
+                          <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                      </ol>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="vert-tabs-Refund" role="tabpanel" aria-labelledby="vert-tabs-Refund-tab">
+                    <!-- tab -->
+                    <div class="card card-outline collapsed-card">
+                        <div class="card-header">
+                          <h3 class="card-title">Apakah pengembalian uang (refund) dapat dilakukan?</h3>
+                          <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                            </button>
+                          </div>
+                          <!-- /.card-tools -->
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                          <ol>
+                              <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                            </li>
+                              <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                            </li>
+                              <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                          </ol>
+                        </div>
+                        <!-- /.card-body -->
+                      </div>
+                      <div class="card card-outline collapsed-card">
+                        <div class="card-header">
+                          <h3 class="card-title">Bagaimana proses refund?</h3>
+                          <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                            </button>
+                          </div>
+                          <!-- /.card-tools -->
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                          <ol>
+                              <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                            </li>
+                              <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                            </li>
+                              <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                          </ol>
+                        </div>
+                        <!-- /.card-body -->
+                      </div>
+                      <div class="card card-outline collapsed-card">
+                        <div class="card-header">
+                          <h3 class="card-title">Berapa lama uang akan dikirimkan ke customer setelah data yang dibutuhkan lengkap?</h3>
+                          <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                            </button>
+                          </div>
+                          <!-- /.card-tools -->
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                          <ol>
+                              <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                            </li>
+                              <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                            </li>
+                              <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                          </ol>
+                        </div>
+                        <!-- /.card-body -->
+                      </div>
+                 </div>
+                 <div class="tab-pane fade" id="vert-tabs-Kelas" role="tabpanel" aria-labelledby="vert-tabs-Kelas-tab">
+                     <div class="border-panduan">
+                        Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus turpis ac, ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate. Morbi euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec interdum placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat diam. Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent imperdiet accumsan ex sit amet facilisis. 
+                     </div>
+                 </div>
+                 <div class="tab-pane fade" id="vert-tabs-Sertifikat" role="tabpanel" aria-labelledby="vert-tabs-Sertifikat-tab">
+                   <!-- tab -->
+                   <div class="card card-outline collapsed-card">
+                    <div class="card-header">
+                      <h3 class="card-title">Bagaimana cara untuk mendapat sertifikat?</h3>
+                      <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                        </button>
+                      </div>
+                      <!-- /.card-tools -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                      <ol>
+                          <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                        </li>
+                          <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                        </li>
+                          <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                      </ol>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                  <div class="card card-outline collapsed-card">
+                    <div class="card-header">
+                      <h3 class="card-title">Apakah saya dapat mengubah nama pada sertifikat?</h3>
+                      <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> </i>
+                        </button>
+                      </div>
+                      <!-- /.card-tools -->
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <p>Kamu bisa mendaftarkan diri dengan mengunjungi website Kampus Indonesia Academy.</p>
+                      <ol>
+                          <li> Pada halaman awal, kamu bisa klik "Daftar" untuk mengisi formulir pendaftaran.
+                        </li>
+                          <li>Setelah kamu mengisi form, tekan tombol "Daftar" pada bagian bawah.
+                        </li>
+                          <li>Kamu akan menerima email pemberitahuan bahwa kamu telah berhasil membuat akun Kampus Indonesia Academy.</li>
+                      </ol>
+                    </div>
+                    <!-- /.card-body -->
+                  </div>
+                 </div>
+                 <div class="tab-pane fade" id="vert-tabs-Instruktur" role="tabpanel" aria-labelledby="vert-tabs-Instruktur-tab">
+                     <div class="border-panduan">
+                        Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus turpis ac, ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate. Morbi euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec interdum placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat diam. Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent imperdiet accumsan ex sit amet facilisis. 
+                     </div>
+                 </div>
+                 <div class="tab-pane fade" id="vert-tabs-Call" role="tabpanel" aria-labelledby="vert-tabs-Call-tab">
+                  <div class="border-panduan">
+                    <h5 class="title-footer">Jika ada pertanyaan untuk instruktur?</h5>
+                    <p>Kamu bisa menghubungi tim Kampus Indonesia Academy melalui:
+                    </p>
+                    <ul>
+                        <li>WA :</li>
+                        <li>Email :</li>
+                    </ul>
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="container-footer mt-4 text-white">
+        <div class="container">
+            <div class="row align-items-baseline">
+                <div class="col-md-3">
+                    <h5 class="title-footer">Kampus Indonesia Academy</h5>
+                    <p class="desc-footer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, quae.</p>
+                    <p class="desc-footer">anonym@gmail.com</p>
+                    <div class="row text-center ">
+                        <div class="d-flex">
+                            <div class="circle-footer">
+                                <i class="fab fa-facebook-f custom-footer"></i>
+                            </div>
+                            <div class="circle-footer">
+                                <i class="fab fa-linkedin-in custom-footer"></i>
+                            </div>
+                            <div class="circle-footer">
+                                <i class="fab fa-instagram custom-footer"></i>
+                            </div>
+                            <div class="circle-footer">
+                                <i class="fab fa-twitter custom-footer"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p class="title-footer-footer">Informasi</p>
+                    <span class="desc-footer">
+                        <p>
+                            <a>Tentang Kami</a>
+                        </p>
+                        <p>
+                            <a>Internship</a>
+                        </p>
+                        <p>
+                            <a>Terms & Conditions</a>
+                        </p>
+                        <p>
+                            <a>Privacy Policy</a>
+                        </p>
+                    </span>
+                </div>
+                <div class="col-md-3">
+                    <p class="title-footer-footer">Layanan</p>
+                    <span class="desc-footer">
+                        <p>
+                            <a>Daftar Kelas</a>
+                        </p>
+                        <p>
+                            <a>Kampus Indonesia Official</a>
+                        </p>
+                    </span>
+                </div>
+                <div class="col-md-3">
+                    <p class="title-footer-footer">Layanan</p>
+                    <span class="desc-footer">
+                        <p>
+                            <a>Help & Support</a>
+                        </p>
+                        <p>
+                            <a>Panduan</a>
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+.border-panduan{
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+}
+    .img-bottom-left-panduan {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        width: 9rem;
+    }
+
+    .img-bottom-panduan {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        width: 12rem;
+    }
+
+    .panduan {
+        padding: 50px 0;
+    }
+
+    .btn-paggination {
+        background-color: #086275;
+    }
+
+    .search-kelas {
+        padding: auto;
+    }
+
+    .has-search .form-control {
+        padding-left: 2.375rem;
+    }
+
+    .has-search .form-control-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #aaa;
+    }
+
+    /* dari halamanan home */
+    .desc-footer {
+        font-size: 0.9rem;
+    }
+
+    .title-footer-footer {
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+
+    .circle-footer {
+        background-color: #2A3D5B;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin: 10px 5px;
+
+    }
+
+    .title-footer {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .container-footer {
+        background-color: #086275;
+        padding: 40px;
+    }
+
+    .trivia-3 {
+        background-color: #0194B4;
+        padding: 30px;
+    }
+
+    .testimoni {
+        font-weight: 600;
+    }
+
+    .card-testiomoni {
+        padding: 20px;
+    }
+
+    .img-bottom-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 5rem;
+    }
+
+    .img-top-top {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10rem;
+    }
+
+    .trivia2 {
+        position: relative;
+    }
+
+    .icon-mengapa-video {
+        padding: 32px;
+        margin: 10px;
+    }
+
+    .icon-mengapa-diskusi {
+        padding: 30px 45px;
+        margin: 10px;
+    }
+
+    .icon-mengapa-modul {
+        padding: 30px;
+        margin: 10px;
+    }
+
+    .icon-mengapa-sertiv {
+        padding: 30px;
+        margin: 10px;
+    }
+
+    .trivia2 {
+        background-color: rgba(8, 98, 117, 0.5);
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .harga-coret {
+        text-decoration: line-through;
+    }
+
+    .icon-caption {
+        margin: 5px;
+    }
+
+    .lebih-lanjut {
+        margin-left: 20px;
+    }
+
+    .caption {
+        margin: 5px;
+        color: blue;
+    }
+
+    .title-carousel {
+        font-weight: 600;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .title-card {
+        font-weight: 600;
+        padding: 20px;
+    }
+
+    .desc-card {
+        font-weight: 400;
+        padding: 0 0 20px 20px;
+        --fz: 14px;
+        --lh: 1.7;
+        --max-lines: 3;
+        -webkit-line-clamp: var(--max-lines);
+        max-height: calc(var(--fz) * var(--lh) * var(--max-lines));
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+
+    }
+
+    .title-home {
+        font-weight: 600;
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .img-left {
+        position: absolute;
+        left: 0;
+        top: 1;
+        z-index: -1;
+        width: 12rem;
+    }
+
+    .img-left-bot {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 9rem;
+    }
+
+    .img-top {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 8rem;
+    }
+
+    .img-bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        width: 12rem;
+    }
+
+    .img-trivia {
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .container-trivia-panduan {
+        position: relative;
+        background-color: rgb(229, 239, 254);
+    }
+
+    .small-box,
+    .small-box-footer {
+        border-radius: 20px;
+    }
+</style>

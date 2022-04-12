@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Kampus Indonesia Academy</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="Assets/adminLTE/plugins/fontawesome-free/css/all.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Assets/adminLTE/dist/css/adminlte.min.css" />
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- jQuery -->
+    <script src="Assets/AdminLTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="Assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="Assets/AdminLTE/dist/js/adminlte.min.js"></script>
+</head>
+
+<body class="hold-transition layout-top-nav">
+    <!-- Navbar -->
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+            <div class="container">
+                <!-- <a href="../../index3.html" class="navbar-brand">
+    <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+         style="opacity: .8">
+  </a> -->
+
+                <button class="navbar-toggler order-1" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+                    <!-- Left navbar links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="kelas.html" class="nav-link active">Kelas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="panduan.html" class="nav-link">Panduan</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Right navbar links -->
+                <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+                    <!-- Messages Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                            <div class="d-flex">
+                                <i class="fas fa-user"></i>
+                                <p>Silahkan Masuk</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                            <div class="dropdown-divider"></div>
+                            <a href="login.html" class="dropdown-item">
+                                <i class="fas fa-sign-in-alt"></i></i> Login
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="register.html" class="dropdown-item">
+                                <i class="fas fa-registered"></i> Register
+                            </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Search  -->
+    <div class="container mt-4">
+        <div class="d-flex justify-content-around">
+            <!-- Actual search box -->
+            <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Cari Kelas">
+              </div>
+
+            <div class="form-group">
+                <select class="form-control select2" style="width: 100%;">
+                    <option selected="selected">Kategori Kelas</option>
+                    <option>Kelas A</option>
+                    <option>Kelas B</option>
+                    <option>Kelas C</option>
+                    <option>Kelas D</option>
+                </select>
+            </div>
+            <!-- /.form-group -->
+
+            <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Cari Sesuai dengan Harga">
+              </div>
+
+            <div class="form-group">
+                <select class="custom-select">
+                    <option>Urutkan</option>
+                    <option>Termurah</option>
+                    <option>Termahal</option>
+                    <option>Favorit</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- Produk -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="small-box ">
+                    <div class="inner">
+                        <a href="detailKelas.html">
+                            <img class="img-fluid mt-3" src="Assets/images/thumbnail(4).png" alt="" srcset="">
+                        </a>
+                        <h4 class="title-card">How to Become SEO Specialist</h4>
+                        <p class="desc-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aliquam
+                            commodi obcaecati, esse cupiditate sit.</p> <label class="lebih-lanjut">lebih lanjut
+                            >></label>
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt caption"></i>
+                            <p class="caption">25 Juni 2021</p>
+                            <p class="caption">18.00 - 20.40</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class='fas fa-money-check-alt icon-caption'></i>
+                            <div>
+                                <h5 class="harga">Rp 35.000,00</h5>
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end jus align-items-center">
+                            <button type="button" class="btn btn-primary icon-caption">Daftar</button>
+                            <i class="fas fa-bookmark icon-caption"></i>
+                            <i class="fas fa-share-square icon-caption"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <div class="small-box ">
+                    <div class="inner">
+                        <img class="img-fluid mt-3" src="Assets/images/thumbnail(1).png" alt="" srcset="">
+                        <h4 class="title-card">How to Become Accountant</h4>
+                        <p class="desc-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aliquam
+                            commodi obcaecati, esse cupiditate sit.</p> <label class="lebih-lanjut">lebih lanjut
+                            >></label>
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt caption"></i>
+                            <p class="caption">25 Juni 2021</p>
+                            <p class="caption">18.00 - 20.40</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class='fas fa-money-check-alt icon-caption'></i>
+                            <div>
+                                <h5 class="harga">IDR 35.000,00</h5>
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end jus align-items-center">
+                            <button type="button" class="btn btn-primary icon-caption">Daftar</button>
+                            <i class="fas fa-bookmark icon-caption"></i>
+                            <i class="fas fa-share-square icon-caption"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="small-box ">
+                    <div class="inner">
+                        <img class="img-fluid mt-3" src="Assets/images/thumbnail(2).png" alt="" srcset="">
+                        <h4 class="title-card">Podcast Speaker: A Beginner Guide</h4>
+                        <p class="desc-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aliquam
+                            commodi obcaecati, esse cupiditate sit.</p> <label class="lebih-lanjut">lebih lanjut
+                            >></label>
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt caption"></i>
+                            <p class="caption">25 Juni 2021</p>
+                            <p class="caption">18.00 - 20.40</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class='fas fa-money-check-alt icon-caption'></i>
+                            <div>
+                                <h5 class="harga">IDR 35.000,00</h5>
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end jus align-items-center">
+                            <button type="button" class="btn btn-primary icon-caption">Daftar</button>
+                            <i class="fas fa-bookmark icon-caption"></i>
+                            <i class="fas fa-share-square icon-caption"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="small-box ">
+                    <div class="inner">
+                        <img class="img-fluid mt-3" src="Assets/images/thumbnail(8).png" alt="" srcset="">
+                        <h4 class="title-card">Level Up with Photoshop</h4>
+                        <p class="desc-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aliquam
+                            commodi obcaecati, esse cupiditate sit.</p> <label class="lebih-lanjut">lebih lanjut
+                            >></label>
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt caption"></i>
+                            <p class="caption">25 Juni 2021</p>
+                            <p class="caption">18.00 - 20.40</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class='fas fa-money-check-alt icon-caption'></i>
+                            <div>
+                                <h5 class="harga">IDR 35.000,00</h5>
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end jus align-items-center">
+                            <button type="button" class="btn btn-primary icon-caption">Daftar</button>
+                            <i class="fas fa-bookmark icon-caption"></i>
+                            <i class="fas fa-share-square icon-caption"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="small-box ">
+                    <div class="inner">
+                        <img class="img-fluid mt-3" src="Assets/images/thumbnail(4).png" alt="" srcset="">
+                        <h4 class="title-card">How to Become SEO Specialist</h4>
+                        <p class="desc-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aliquam
+                            commodi obcaecati, esse cupiditate sit.</p> <label class="lebih-lanjut">lebih lanjut
+                            >></label>
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt caption"></i>
+                            <p class="caption">25 Juni 2021</p>
+                            <p class="caption">18.00 - 20.40</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class='fas fa-money-check-alt icon-caption'></i>
+                            <div>
+                                <h5 class="harga">Rp 35.000,00</h5>
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end jus align-items-center">
+                            <button type="button" class="btn btn-primary icon-caption">Daftar</button>
+                            <i class="fas fa-bookmark icon-caption"></i>
+                            <i class="fas fa-share-square icon-caption"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="small-box ">
+                    <div class="inner">
+                        <img class="img-fluid mt-3" src="Assets/images/thumbnail(1).png" alt="" srcset="">
+                        <h4 class="title-card">How to Become Accountant</h4>
+                        <p class="desc-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aliquam
+                            commodi obcaecati, esse cupiditate sit.</p> <label class="lebih-lanjut">lebih lanjut
+                            >></label>
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt caption"></i>
+                            <p class="caption">25 Juni 2021</p>
+                            <p class="caption">18.00 - 20.40</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class='fas fa-money-check-alt icon-caption'></i>
+                            <div>
+                                <h5 class="harga">IDR 35.000,00</h5>
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end jus align-items-center">
+                            <button type="button" class="btn btn-primary icon-caption">Daftar</button>
+                            <i class="fas fa-bookmark icon-caption"></i>
+                            <i class="fas fa-share-square icon-caption"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="small-box ">
+                    <div class="inner">
+                        <img class="img-fluid mt-3" src="Assets/images/thumbnail(2).png" alt="" srcset="">
+                        <h4 class="title-card">Podcast Speaker: A Beginner Guide</h4>
+                        <p class="desc-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aliquam
+                            commodi obcaecati, esse cupiditate sit.</p> <label class="lebih-lanjut">lebih lanjut
+                            >></label>
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt caption"></i>
+                            <p class="caption">25 Juni 2021</p>
+                            <p class="caption">18.00 - 20.40</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class='fas fa-money-check-alt icon-caption'></i>
+                            <div>
+                                <h5 class="harga">IDR 35.000,00</h5>
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end jus align-items-center">
+                            <button type="button" class="btn btn-primary icon-caption">Daftar</button>
+                            <i class="fas fa-bookmark icon-caption"></i>
+                            <i class="fas fa-share-square icon-caption"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="small-box ">
+                    <div class="inner">
+                        <img class="img-fluid mt-3" src="Assets/images/thumbnail(8).png" alt="" srcset="">
+                        <h4 class="title-card">Level Up with Photoshop</h4>
+                        <p class="desc-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aliquam
+                            commodi obcaecati, esse cupiditate sit.</p> <label class="lebih-lanjut">lebih lanjut
+                            >></label>
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt caption"></i>
+                            <p class="caption">25 Juni 2021</p>
+                            <p class="caption">18.00 - 20.40</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class='fas fa-money-check-alt icon-caption'></i>
+                            <div>
+                                <h5 class="harga">IDR 35.000,00</h5>
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end jus align-items-center">
+                            <button type="button" class="btn btn-primary icon-caption">Daftar</button>
+                            <i class="fas fa-bookmark icon-caption"></i>
+                            <i class="fas fa-share-square icon-caption"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Paggination -->
+    <div class="container mt-4 text-center">
+        <a class="btn btn-outline-info btn-paggination text-white">
+            1
+        </a>
+        <a class="btn btn-outline-info">
+            2
+        </a>
+        <a class="btn btn-outline-info">
+            >
+        </a>
+    </div>
+    <!-- Footer -->
+    <div class="container-footer mt-4 text-white">
+        <div class="container">
+            <div class="row align-items-baseline">
+                <div class="col-md-3">
+                    <h5 class="title-footer">Kampus Indonesia Academy</h5>
+                    <p class="desc-footer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, quae.</p>
+                    <p class="desc-footer">anonym@gmail.com</p>
+                    <div class="row text-center ">
+                        <div class="d-flex">
+                            <div class="circle-footer">
+                                <i class="fab fa-facebook-f custom-footer"></i>
+                            </div>
+                            <div class="circle-footer">
+                                <i class="fab fa-linkedin-in custom-footer"></i>
+                            </div>
+                            <div class="circle-footer">
+                                <i class="fab fa-instagram custom-footer"></i>
+                            </div>
+                            <div class="circle-footer">
+                                <i class="fab fa-twitter custom-footer"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p class="title-footer-footer">Informasi</p>
+                    <span class="desc-footer">
+                        <p>
+                            <a>Tentang Kami</a>
+                        </p>
+                        <p>
+                            <a>Internship</a>
+                        </p>
+                        <p>
+                            <a>Terms & Conditions</a>
+                        </p>
+                        <p>
+                            <a>Privacy Policy</a>
+                        </p>
+                    </span>
+                </div>
+                <div class="col-md-3">
+                    <p class="title-footer-footer">Layanan</p>
+                    <span class="desc-footer">
+                        <p>
+                            <a>Daftar Kelas</a>
+                        </p>
+                        <p>
+                            <a>Kampus Indonesia Official</a>
+                        </p>
+                    </span>
+                </div>
+                <div class="col-md-3">
+                    <p class="title-footer-footer">Layanan</p>
+                    <span class="desc-footer">
+                        <p>
+                            <a>Help & Support</a>
+                        </p>
+                        <p>
+                            <a>Panduan</a>
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    .btn-paggination {
+      background-color: #086275;
+  }
+
+  .search-kelas {
+      padding: auto;
+  }
+  .has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+ .has-search .form-control {
+      padding-left: 2.375rem;
+  }
+   /* Home */
+   .desc-footer {
+      font-size: 0.9rem;
+  }
+
+  .title-footer-footer {
+      font-weight: 500;
+      font-size: 0.9rem;
+  }
+
+  .circle-footer {
+      background-color: #2A3D5B;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      margin: 10px 5px;
+
+  }
+
+  .title-footer {
+      font-weight: 600;
+      font-size: 1.2rem;
+  }
+
+  .container-footer {
+      background-color: #086275;
+      padding: 40px;
+  }
+
+  .icon-caption {
+      margin: 5px;
+  }
+
+  .lebih-lanjut {
+      margin-left: 20px;
+  }
+
+  .caption {
+      margin: 5px;
+      color: blue;
+  }
+
+  .title-card {
+      font-weight: 600;
+      padding: 20px;
+  }
+
+  .desc-card {
+      font-weight: 400;
+      padding: 0 0 20px 20px;
+      --fz: 14px;
+      --lh: 1.7;
+      --max-lines: 3;
+      -webkit-line-clamp: var(--max-lines);
+      max-height: calc(var(--fz) * var(--lh) * var(--max-lines));
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+
+  }
+  .small-box,
+  .small-box-footer {
+      border-radius: 20px;
+  }
+</style>
+

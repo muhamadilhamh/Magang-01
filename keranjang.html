@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Kampus Indonesia Academy</title>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="Assets/AdminLTE/plugins/fontawesome-free/css/all.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Assets/AdminLTE/dist/css/adminlte.min.css" />
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="Assets/AdminLTE/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+
+    <!-- jQuery -->
+    <script src="Assets/AdminLTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="Assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="Assets/AdminLTE/dist/js/adminlte.min.js"></script>
+    <!-- SweetAlert2 -->
+<script src="Assets/AdminLTE/plugins/sweetalert2/sweetalert2.min.js"></script>
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+     <!-- Navbar -->
+     <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+        <div class="container">
+            <!-- <a href="../../index3.html" class="navbar-brand">
+    <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+         style="opacity: .8">
+  </a> -->
+
+            <button class="navbar-toggler order-1" type="button" data-toggle="collapse"
+                data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+                <!-- Left navbar links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="kelas.html" class="nav-link">Kelas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="panduan.html" class="nav-link">Panduan</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Right navbar links -->
+            <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+                <!-- Messages Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                      <div class="d-flex">
+                        <i class="fas fa-user"></i>
+                        <p>Silahkan Masuk</p>
+                      </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                      <div class="dropdown-divider"></div>
+                      <a href="login.html" class="dropdown-item">
+                        <i class="fas fa-sign-in-alt"></i></i> Login
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a href="register.html" class="dropdown-item">
+                        <i class="fas fa-registered"></i> Register
+                      </a>
+                  </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!-- keranjang -->
+<div class="container">
+    <h4 class="title-card">Keranjang Anda (1 Item) </h4>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="d-flex">
+                <input type="checkbox" class="form-check-input" onclick="toggle(this);">
+                <p>Pilih Semua</p>
+            </div>
+               <hr>
+               <div class="row align-items-center mb-4">
+                <div class="col-md-5 d-flex align-items-center">
+                    <input type="checkbox" class="form-check-input">
+                    <span class="checkmark"></span>
+                    <img class="img-fluid" src="Assets/images/thumbnail(4).png" alt="" srcset="">
+                </div>
+                <div class="col-md-7 align-items-center">
+                   <h4>Podcast Speaker: A Beginner Guide</h4>
+                    <p class="pembuat-lainnya">Brandon William </p>
+                    <div class="d-flex">
+                        <i class="fas fa-calendar-alt caption"></i>
+                        <p class="caption"><b>25 Juni 2021</b></p>
+                        <p class="caption">18.00 - 20.40</p>
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <i class='fas fa-money-check-alt icon-caption'></i>
+                        <div>
+                            <h5 class="harga">IDR Rp 35.000,00</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <i class="fas fa-bookmark icon-caption"></i>
+                        <i class="fas fa-trash icon-caption"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="col-md-4">
+            <div class="small-box ">
+                <div class="inner">
+                <h5 class="title-keranjang">Daftar Kelas</h5>
+                   <div class="d-flex justify-content-between">
+                       <p class="desc-keranjang">Podcast Speaker: A Beginner Guide</p>
+                       <p class="desc-keranjang">IDR 35.000,00</p>
+                   </div>
+                <h5 class="title-keranjang">Total Harga</h5>
+                <div class="d-flex justify-content-between">
+                    <p class="desc-keranjang">1 Kelas</p>
+                    <p class="desc-keranjang">IDR 35.000,00</p>
+                </div>
+                <h5 class="title-keranjang">Diskon</h5>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control rounded-0" placeholder="Ketik Kode Promo Anda Disini!">
+                    <span class="input-group-append">
+                         <button type="button" class="btn btn-info btn-flat">Masukkan</button>
+                    </span>
+                </div>
+                <hr>
+                <div class="text-right">
+                    <p class="desc-keranjang">Total</p>
+                    <h5 class="title-keranjang">IDR 35.000,00</h5>
+                </div>
+                <div class="row">
+                    <!-- <button type="button" class=" icon-caption-keranjang btn ">Beli (1)</button> -->
+                    <button type="button" class="icon-caption-keranjang btn" data-toggle="modal" data-target="#modal-lg">
+                        Beli (1)
+                      </button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="modal-lg">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="title-card">Metode Pembayaran </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <img class="img-fluid mt-3" src="Assets/images/BNI.png" width="60" >
+                    </div>
+                    <div class="col-md-3">
+                        Transfer Bank BNI
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <input type="radio" class="form-check-input">
+                    </div>
+                </div>
+                <hr>
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <img class="img-fluid mt-3" src="Assets/images/BCA.png" width="60" >
+                    </div>
+                    <div class="col-md-3">
+                        Transfer Bank BCA
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <input type="radio" class="form-check-input">
+                    </div>
+                </div>
+                <hr>
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <img class="img-fluid mt-3" src="Assets/images/MANDIRI.png" width="60" >
+                    </div>
+                    <div class="col-md-3">
+                        Transfer Bank MANDIRI
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <input type="radio" class="form-check-input">
+                    </div>
+                </div>
+                <hr>
+                <h5><b>Panduan Pembayaran dengan Transfer Bank BNI</b></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                </ul>
+                <div class="small-box ">
+                    <div class="container p-3">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <p class="desc-keranjang">Total</p>
+                                <h5 class="title-keranjang">IDR 35.000,00</h5>
+                            </div>
+                            <div class="col-md-9 text-right">
+                                <!-- <button type="button" class="icon-caption-keranjang btn">
+                                    Saya sudah bayar
+                                   </button> -->
+                                   <a class="btn icon-caption-keranjang" href="konfirmasi.html">Saya Sudah Bayar</a>
+                            </div>
+                        </div>
+                          
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+<!-- Rekomendasi -->
+<div class="container">
+    <h4 class="title-card">Rekomendasi Untuk Anda</h4>
+    <hr>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="small-box ">
+                <div class="inner">
+                    <img class="img-fluid mt-3" src="Assets/images/thumbnail(1).png" alt="" srcset="">
+                    <h4 class="title-card">How to Become Accountant</h4>
+                    <div class="d-flex rating">
+                        <p class="rating-angka checked">4.8</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p class="rating-angka">(36)</p>
+                    </div>
+                    <p class="desc-card">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia aliquam commodi obcaecati, esse cupiditate sit.</p> <label
+                        class="lebih-lanjut">lebih lanjut
+                        >></label>
+                    <div class="d-flex">
+                        <i class="fas fa-calendar-alt caption"></i>
+                        <p class="caption">25 Juni 2021</p>
+                        <p class="caption">18.00 - 20.40</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class='fas fa-money-check-alt icon-caption'></i>
+                        <div>
+                            <h5 class="harga">IDR 35.000,00</h5>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-end jus align-items-center">
+                        <button type="button" class="btn btn-primary icon-caption">Daftar</button>
+                        <i class="fas fa-bookmark icon-caption"></i>
+                        <i class="fas fa-share-square icon-caption"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    function toggle(source) {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i] != source)
+            checkboxes[i].checked = source.checked;
+    }
+}
+</script>
+
+<style>
+    .rating-angka{
+       font-weight: 400;
+       margin:0 15px;
+    }
+    .rating{
+        padding-left:20px;
+    }
+    .checked {
+        color: orange;
+    }
+    .title-keranjang{
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin: 5px;
+    }
+    .desc-keranjang{
+        font-size: 1.4rem;
+        margin: 5px;
+    }
+     .icon-caption-keranjang{
+        margin: 10px 0px 0px 20px;
+        padding: 7px 140px;
+        background-color: #364CBB;
+        color: white;
+    }
+  .desc-footer{
+        font-size: 0.9rem;
+    }
+    .title-footer-footer{
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    .circle-footer {
+        background-color: #2A3D5B;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin: 10px 5px;
+        
+}
+    .title-footer{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .container-footer{
+        background-color: #086275;
+        padding: 40px;
+    }
+    .trivia-3{
+        background-color: #0194B4;
+        padding: 30px;
+    }
+    .testimoni{
+        font-weight: 600;
+    }
+    .card-testiomoni{
+        padding: 20px;
+    }
+    .img-bottom-bottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 5rem;
+    }
+    .img-top-top{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10rem;
+    }
+    .trivia2{
+        position: relative;
+    }
+    .icon-mengapa-video{
+        padding: 32px;
+        margin: 10px;
+    }
+    .icon-mengapa-diskusi{
+        padding: 30px 45px;
+        margin: 10px;
+    }
+    .icon-mengapa-modul{
+        padding: 30px;
+        margin: 10px;
+    }
+    .icon-mengapa-sertiv{
+        padding: 30px;
+        margin: 10px;
+    }
+    .trivia2 {
+        background-color: rgba(8, 98, 117, 0.5);
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .harga-coret {
+        text-decoration: line-through;
+    }
+
+    .icon-caption {
+        margin: 5px;
+    }
+
+    .lebih-lanjut {
+        margin-left: 20px;
+    }
+
+    .caption {
+        margin: 5px;
+        color: blue;
+    }
+
+    .title-carousel {
+        font-weight: 600;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .title-card {
+        font-weight: 600;
+        padding: 20px;
+    }
+
+    .desc-card {
+        font-weight: 400;
+        padding: 0 0 20px 20px;
+        --fz: 14px;
+        --lh: 1.7;
+        --max-lines: 3;
+        -webkit-line-clamp: var(--max-lines);
+        max-height: calc(var(--fz) * var(--lh) * var(--max-lines));
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+
+    }
+
+    .title-home {
+        font-weight: 600;
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .img-left {
+        position: absolute;
+        left: 0;
+        top: 1;
+        z-index: -1;
+        width: 12rem;
+    }
+
+    .img-left-bot {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 9rem;
+    }
+
+    .img-top {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 8rem;
+    }
+
+    .img-bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        width: 12rem;
+    }
+
+    .img-trivia {
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .container-trivia {
+        position: relative;
+    }
+
+    .small-box,
+    .small-box-footer {
+        border-radius: 20px;
+    }
+</style>

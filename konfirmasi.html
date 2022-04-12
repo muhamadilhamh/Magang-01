@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+  <title>Kampus Indonesia Academy</title>
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="Assets/AdminLTE/plugins/fontawesome-free/css/all.min.css"
+  />
+  <!-- Theme style -->
+  <link rel="stylesheet" href="Assets/AdminLTE/dist/css/adminlte.min.css" />
+  <!-- Google Font: Source Sans Pro -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- jQuery -->
+  <script src="Assets/AdminLTE/plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="Assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="Assets/AdminLTE/dist/js/adminlte.min.js"></script>
+ 
+</head>
+<body class="hold-transition layout-top-nav">
+       <!-- Navbar -->
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+   <div class="container">
+       <button class="navbar-toggler order-1" type="button" data-toggle="collapse"
+           data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+           aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+           <!-- Left navbar links -->
+           <ul class="navbar-nav">
+               <li class="nav-item">
+                   <a href="home.html" class="nav-link active">Beranda</a>
+               </li>
+               <li class="nav-item">
+                   <a href="kelas.html" class="nav-link">Kelas</a>
+               </li>
+               <li class="nav-item">
+                   <a href="#" class="nav-link">Tentang Kami</a>
+               </li>
+               <li class="nav-item">
+                   <a href="panduan.html" class="nav-link">Panduan</a>
+               </li>
+           </ul>
+       </div>
+       <!-- Right navbar links -->
+       <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+           <!-- Messages Dropdown Menu -->
+           <li class="nav-item dropdown">
+               <a class="nav-link" data-toggle="dropdown" href="#">
+                 <div class="d-flex">
+                   <i class="fas fa-user"></i>
+                   <p>Silahkan Masuk</p>
+                 </div>
+               </a>
+               <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                 <div class="dropdown-divider"></div>
+                 <a href="login.html" class="dropdown-item">
+                   <i class="fas fa-sign-in-alt"></i></i> Login
+                 </a>
+                 <div class="dropdown-divider"></div>
+                 <a href="register.html" class="dropdown-item">
+                   <i class="fas fa-registered"></i> Register
+                 </a>
+             </li>
+       </ul>
+   </div>
+</nav>
+</div>
+    <div class="container">
+        <h4 class="title-card">Unggah Bukti Pembayaran </h4>
+        <hr>
+        <div class="box">
+					<input type="file" name="file-4[]" id="file-4" class="inputfile inputfile-3" data-multiple-caption="{count} files selected" multiple />
+					<label for="file-4"><span>Klik mencari file Anda&hellip;</span></label>
+				</div>
+    </div>
+    
+    <!-- Submit file -->
+    <div class="container mt-4">
+      <div class="small-box ">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <p class="desc-keranjang">Total</p>
+                    <h5 class="title-keranjang">IDR 35.000,00</h5>
+                </div>
+                <div class="col-md-9 text-right d-flex">
+                  <button type="button" class="icon-caption-konfirmasi-detail btn">
+                    Lihat Detail Pembelian
+                    </button>
+                    <button type="button" class="icon-caption-konfirmasi  btn" data-toggle="modal" data-target="#modal-lg">
+                       Unggah Bukti Pembayaran
+                       </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Modal -->
+<div class="modal fade" id="modal-lg">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h4 class="title-card">Bukti Pembayaran</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex justify-content-center mb-4">
+          <div class="circle">
+            <i class="fa 3x fa-check fa-5x custom-icon"></i>
+          </div>
+        </div>
+        <h3 class="text-center mb-3">
+         Berhasil dikirim
+        </h3>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <a class="btn btn-primary" href="home.html">Pergi ke Home</a>
+        <!-- <button type="button" class="btn btn-primary">Pergi ke Keranjang</button> -->
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+    <!-- Footer -->
+<div class="container-footer mt-4 text-white">
+  <div class="container">
+    <div class="row align-items-baseline">
+      <div class="col-md-3">
+        <h5 class="title-footer">Kampus Indonesia Academy</h5>
+        <p class="desc-footer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, quae.</p>
+        <p class="desc-footer">anonym@gmail.com</p>
+        <div class="row text-center ">
+          <div class="d-flex">
+              <div class="circle-footer">
+                  <i class="fab fa-facebook-f custom-footer"></i>
+              </div>
+              <div class="circle-footer">
+                  <i class="fab fa-linkedin-in custom-footer"></i>
+              </div>
+            <div class="circle-footer">
+                <i class="fab fa-instagram custom-footer"></i>
+            </div>
+            <div class="circle-footer">
+                <i class="fab fa-twitter custom-footer"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <p class="title-footer-footer">Informasi</p>
+        <span class="desc-footer">
+          <p>
+            <a 
+              >Tentang Kami</a
+            >
+          </p>
+          <p>
+            <a
+              >Internship</a
+            >
+          </p>
+          <p>
+            <a
+              >Terms & Conditions</a
+            >
+          </p>
+            <p>
+            <a
+              >Privacy Policy</a
+            >
+          </p>
+        </span>
+      </div>
+      <div class="col-md-3">
+          <p class="title-footer-footer">Layanan</p>
+          <span class="desc-footer">
+            <p>
+              <a 
+                >Daftar Kelas</a
+              >
+            </p>
+            <p>
+              <a
+                >Kampus Indonesia Official</a
+              >
+            </p>
+          </span>
+        </div>
+        <div class="col-md-3">
+          <p class="title-footer-footer">Layanan</p>
+          <span class="desc-footer">
+            <p>
+              <a 
+                >Help & Support</a
+              >
+            </p>
+            <p>
+              <a
+                >Panduan</a
+              >
+            </p>
+          </span>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+<script>
+  ( function ( document, window, index )
+{
+	var inputs = document.querySelectorAll( '.inputfile' );
+	Array.prototype.forEach.call( inputs, function( input )
+	{
+		var label	 = input.nextElementSibling,
+			labelVal = label.innerHTML;
+
+		input.addEventListener( 'change', function( e )
+		{
+			var fileName = '';
+			if( this.files && this.files.length > 1 )
+				fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+			else
+				fileName = e.target.value.split( '\\' ).pop();
+
+			if( fileName )
+				label.querySelector( 'span' ).innerHTML = fileName;
+			else
+				label.innerHTML = labelVal;
+		});
+
+		// Firefox bug fix
+		input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
+		input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
+	});
+}( document, window, 0 ));
+</script>
+<style>
+  .custom-icon {
+  margin: 5px 2px;
+  color: rgb(28, 193, 3);
+}
+.circle {
+  border: 6px solid rgb(28, 193, 3);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+   .title-keranjang{
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin: 5px;
+    }
+    .desc-keranjang{
+        font-size: 1.4rem;
+        margin: 5px;
+    }
+     .icon-caption-konfirmasi{
+        margin: 10px 0px 0px 20px;
+        padding: 2px 100px;
+        background-color: #364CBB;
+        color: white;
+    }
+    .icon-caption-konfirmasi-detail{
+        margin: 10px 0px 0px 20px;
+        padding: 2px 100px;
+        color: blue;
+        border-style: dashed;
+    }
+  .box{
+    text-align: center;
+    border-style: dashed;
+    border-radius: 20px;
+  }
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 150px 20px;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+
+.inputfile-3 + label {
+    color: #242634;
+}
+
+.inputfile-3:focus + label,
+.inputfile-3.has-focus + label,
+.inputfile-3 + label:hover {
+    color: #722040;
+}
+
+
+      .title-card {
+        font-weight: 600;
+        padding: 20px;
+    }
+    /* dari halamanan home */
+  .desc-footer{
+        font-size: 0.9rem;
+    }
+    .title-footer-footer{
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    .circle-footer {
+        background-color: #2A3D5B;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin: 10px 5px;
+        
+}
+    .title-footer{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .container-footer{
+        background-color: #086275;
+        padding: 40px;
+    }
+    .trivia-3{
+        background-color: #0194B4;
+        padding: 30px;
+    }
+    .testimoni{
+        font-weight: 600;
+    }
+    .card-testiomoni{
+        padding: 20px;
+    }
+    .img-bottom-bottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 5rem;
+    }
+    .img-top-top{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10rem;
+    }
+    .trivia2{
+        position: relative;
+    }
+    .icon-mengapa-video{
+        padding: 32px;
+        margin: 10px;
+    }
+    .icon-mengapa-diskusi{
+        padding: 30px 45px;
+        margin: 10px;
+    }
+    .icon-mengapa-modul{
+        padding: 30px;
+        margin: 10px;
+    }
+    .icon-mengapa-sertiv{
+        padding: 30px;
+        margin: 10px;
+    }
+    .trivia2 {
+        background-color: rgba(8, 98, 117, 0.5);
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .harga-coret {
+        text-decoration: line-through;
+    }
+
+    .icon-caption {
+        margin: 5px;
+    }
+
+    .lebih-lanjut {
+        margin-left: 20px;
+    }
+
+    .caption {
+        margin: 5px;
+        color: blue;
+    }
+
+    .title-carousel {
+        font-weight: 600;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .title-card {
+        font-weight: 600;
+        padding: 20px;
+    }
+
+    .desc-card {
+        font-weight: 400;
+        padding: 0 0 20px 20px;
+        --fz: 14px;
+        --lh: 1.7;
+        --max-lines: 3;
+        -webkit-line-clamp: var(--max-lines);
+        max-height: calc(var(--fz) * var(--lh) * var(--max-lines));
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+
+    }
+
+    .title-home {
+        font-weight: 600;
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .img-left {
+        position: absolute;
+        left: 0;
+        top: 1;
+        z-index: -1;
+        width: 12rem;
+    }
+
+    .img-left-bot {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 9rem;
+    }
+
+    .img-top {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 8rem;
+    }
+
+    .img-bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        width: 12rem;
+    }
+
+    .img-trivia {
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .container-trivia {
+        position: relative;
+    }
+
+    .small-box,
+    .small-box-footer {
+        border-radius: 20px;
+    }
+</style>

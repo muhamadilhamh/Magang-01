@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Kampus Indonesia Academy</title>
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="Assets/adminLTE/plugins/fontawesome-free/css/all.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Assets/adminLTE/dist/css/adminlte.min.css" />
+    <!-- Google Font: Source Sans Pro -->
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery -->
+    <script src="Assets/AdminLTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="Assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="Assets/AdminLTE/dist/js/adminlte.min.js"></script>
+</head>
+<body class="hold-transition layout-top-nav">
+    <!-- Navbar -->
+<div class="wrapper">
+           <!-- Navbar -->
+           <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+            <div class="container">
+                <!-- <a href="../../index3.html" class="navbar-brand">
+        <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+             style="opacity: .8">
+      </a> -->
+
+                <button class="navbar-toggler order-1" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+                    <!-- Left navbar links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link active">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="kelas.html" class="nav-link">Kelas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="panduan.html" class="nav-link">Panduan</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Right navbar links -->
+                <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+                    <!-- Messages Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                          <div class="d-flex">
+                            <i class="fas fa-user"></i>
+                            <p>Silahkan Masuk</p>
+                          </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                          <div class="dropdown-divider"></div>
+                          <a href="login.html" class="dropdown-item">
+                            <i class="fas fa-sign-in-alt"></i></i> Login
+                          </a>
+                          <div class="dropdown-divider"></div>
+                          <a href="register.html" class="dropdown-item">
+                            <i class="fas fa-registered"></i> Register
+                          </a>
+                      </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<!-- Kelas -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4 offset-1">
+            <div class="small-box ">
+                <div class="inner">
+                    <img class="img-fluid" src="Assets/images/thumbnail.png" alt="" srcset="">
+                    <h4 class="title-card">How to Become SEO Specialist</h4>
+                        <div class="d-flex rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="rating-angka">(6 Rating)</p>
+                            <p class="rating-angka">19 Peserta</p>
+                        </div>
+                        <!-- <button type="button" class="btn btn-primary  icon-caption-detail">Daftar</button> -->
+                        <button type="button" class="btn btn-primary icon-caption-detail" data-toggle="modal" data-target="#modal-lg">
+                            Daftar
+                          </button>
+                    <div class="d-flex icon-caption-harga">
+                        <i class='fas fa-money-check-alt'></i>
+                            <h4 class="harga-detail">IDR 35.000,00</h4>
+                            <i class="fas fa-bookmark icon-caption"></i>
+                            <i class="fas fa-share-square icon-caption"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p class="title-home">How to Become SEO Specialist</p>
+            <input type="checkbox" id="expanded">
+             <p class="detail-kelas-desc">Didalam kursus smartphone photography ini anda akan di ajarkan bagaimana mendayagunakan smartphone anda menjadi alat untuk menyalurkan hobby photography. Menjadi seorang photographer tidak harus dengan menggunakan perangkat yang mahal, hanya berbekal smartphone yang "standard" atau dengan kualitas yang biasa saja tetap mampu menghasilkan foto foto yang menarik. 
+                 Disini akan dipelajari teknik penggunaan aplikasi smartphone yang akan "merubah" kemampuan kamera bawaan menjadi lebih bisa di konfigurasi layaknya perangkat yang mahal. Akan di berikan pula penggunaan aplikasi post pro editing untuk membuat hasil foto menjadi lebih keren </p> 
+             <label for="expanded" role="button" class="lebih-lanjut-detail">Tampilkan Lebih Banyak <i class="fas fa-arrow-circle-down"></i> </label>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-lg">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="title-card">How to Become SEO Specialist </h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p> <b>Nama Lengkap</b></p>
+                        <p>Ilham Habib</p>
+                        <label>No WhatsApp</label>
+                        <textarea class="form-control" rows="1" placeholder="Masukan disini"></textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <p> <b>Alamat Email</b></p>
+                        <p>ilham.habib190600@gmail.com</p>
+                        <label>Kota Asal</label>
+                        <textarea class="form-control" rows="1" placeholder="Masukan disini"></textarea>
+                    </div>
+                </div>
+              </div>
+              <hr>
+              <div class="row align-items-center mb-4">
+                <div class="col-md-3">
+                    <img class="img-fluid" src="Assets/images/thumbnail(4).png" alt="" srcset="">
+                </div>
+                <div class="col-md-4">
+                    <span class="kelas-lainnya">How to Become SEO Specialist </span>
+                    <p class="pembuat-lainnya">John Doe </p>
+                    <div class="d-flex">
+                        <i class='fas fa-money-check-alt icon-caption'></i>
+                        <div>
+                            <h5 class="harga">IDR 35.000,00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                  <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+        
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <a class="btn btn-primary" href="keranjang.html">Pergi ke Keranjang</a>
+          <!-- <button type="button" class="btn btn-primary">Pergi ke Keranjang</button> -->
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+
+<!-- Alasan & Syarat -->
+<div class="container">
+<hr>
+<h4 class="title-card">Keuntungan apa saja yang didapat?</h4>
+<ul class="check-list">
+    <li>Teknik, Tips dan Trick Cara Penggunaan Smartphone Untuk Photography</li>
+    <li>Teknik Street Photography</li>
+    <li>Teknik Macro Photography</li>
+    <li>Post Pro Editing</li>
+</ul>
+<hr>
+<h4 class="title-card">Persyaratan</h4>
+<ul>
+    <li>Memiliki Smartphone Tipe Apapun</li>
+</ul>
+<hr>
+</div>
+
+
+<!-- yg akan dipelajar -->
+<div class="container">
+    <h4 class="title-card">Apa yang Akan Dipelajari </h4>
+    <div class="card card-secondary collapsed-card">
+        <div class="card-header">
+          <h3 class="card-title">Materi</h3>
+          <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-plus"> "How to Become SEO Specialist" </i>
+            </button>
+          </div>
+          <!-- /.card-tools -->
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <ul>
+              <li>Pengantar Smartphone Photography</li>
+              <li>Aturan Dasar Photography</li>
+              <li>Mengenal Aperure</li>
+              <li>Mengenal Shutter Speed</li>
+              <li>Mengenal ISO</li>
+              <li>Mengenal Komposisi</li>
+              <li>Street Photography</li>
+              <li>Macro Photography</li>
+              <li>Editing Post Pro</li>
+          </ul>
+        </div>
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+    <hr>
+</div>
+
+<!-- Tentang mentor -->
+<div class="container">
+    <h4 class="title-card">Tentang Mentor </h4>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-fluid avatar-testimoni" src="Assets/images/unsplash.png" alt="">
+        </div>
+        <div class="col-md-8">
+            <input type="checkbox" id="expanded-1">
+             <p class="detail-kelas-testimoni">Halo Saya John Doe, praktisi di Teknologi Informasi terutama yang berkaitan dengan keamanan siber. Situs yang aktif saya pegang saat ini adalah DEFCON 62231 sebuah komunitas penggiat keamanan IT di Indonesia yang merupakan bagian dari DEFCON Group yang berpusat di Amerika Serikat. 
+             Beberapa training yang sempat saya ikuti adalah CEH, ECSA, CWNA, CWNE, CISA, CISM, VCP, CISSP, CISSP-ISSEP, QLIKVIEW, ITILV3 FOUNDATION, COBIT5, HEROWARE, SURELINE, CSSGB, CTFL, RHCA, RHCE, OSCP,  CSSA, Alibaba Cloud, Cisco Academy, VMware. </p> 
+             <label for="expanded-1" role="button" class="lebih-lanjut-testimoni">Tampilkan Lebih Banyak <i class="fas fa-arrow-circle-down"></i> </label>
+             <br>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <h3 class="rating-testimoni">4.0</h3>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="col-md-5 progress-testimoni">
+                    <!-- 1 -->
+                    <div class="progress progress-sm active">
+                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar"
+                             aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width: 33%">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>     
+                      <!-- 2 -->
+                      <div class="progress progress-sm active">
+                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar"
+                             aria-valuenow="17" aria-valuemin="0" aria-valuemax="100" style="width: 17%">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+                      <!-- 3 -->
+                      <div class="progress progress-sm active">
+                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar"
+                             aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+                      <!-- 4 -->
+                      <div class="progress progress-sm active">
+                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar"
+                             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+                      <!-- 5 -->
+                      <div class="progress progress-sm active">
+                        <div class="progress-bar bg-warning progress-bar-striped" role="progressbar"
+                             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>                     
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="rating-angka">33%</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p class="rating-angka">17%</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p class="rating-angka">50%</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star"></span>
+                        <p class="rating-angka">0%</p>
+                    </div>
+                    <div class="d-flex">
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star "></span>
+                        <span class="fa fa-star"></span>
+                        <p class="rating-angka">0%</p>
+                    </div>
+                </div>
+            </div>
+             
+            <!-- Penilaian -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="small-box">
+                        <div class="inner text-center">
+                            <img class="img-fluid" src="Assets/images/unsplash02.png" alt="">
+                                <div class="text-center">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                            </div>
+                        </div>
+                        <p class="testimoni-detail-role">Membantu saya yang masih pemula dalam photography menjadi mengerti lebih mudah</p>
+                        <span class="testimoni-detail">Attitude</span>
+                        <p class="testimoni-detail-role">Peserta How to Become SEO Specialist </p>
+                </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="small-box">
+                        <div class="inner text-center">
+                            <img class="img-fluid" src="Assets/images/unsplash01.png" alt="">
+                                <div class="text-center">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        <p class="testimoni-detail-role">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, repellendus.</p>
+                        <span class="testimoni-detail">Royal Navy</span>
+                        <p class="testimoni-detail-role">Peserta How to Become SEO Specialist </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<hr>
+
+<!-- Kelas lain -->
+<div class="container">
+    <h4 class="title-card">Kelas Lain </h4>
+    <div class="row align-items-center mb-4">
+        <div class="col-md-2">
+            <img class="img-fluid" src="Assets/images/thumbnail(4).png" alt="" srcset="">
+        </div>
+        <div class="col-md-4">
+            <span class="kelas-lainnya">Kelas B</span>
+            <p class="pembuat-lainnya">By John Doe </p>
+            <p class="caption">Last updated XX May 2021</p>
+        </div>
+        <div class="col-md-2 d-flex">
+            <h5 class="harga">IDR 35.000,00</h5>
+            <i class="fas fa-share-square icon-caption"></i>
+        </div>
+    </div>
+
+    <div class="row align-items-center mb-4">
+        <div class="col-md-2">
+            <img class="img-fluid" src="Assets/images/thumbnail(2).png" alt="" srcset="">
+        </div>
+        <div class="col-md-4">
+            <span class="kelas-lainnya">Kelas B</span>
+            <p class="pembuat-lainnya">By John Doe </p>
+            <p class="caption">Last updated XX May 2021</p>
+        </div>
+        <div class="col-md-2 d-flex">
+            <h5 class="harga">IDR 35.000,00</h5>
+            <i class="fas fa-share-square icon-caption"></i>
+        </div>
+    </div>
+    <div class="row align-items-center mb-4">
+        <div class="col-md-2">
+            <img class="img-fluid" src="Assets/images/thumbnail(1).png" alt="" srcset="">
+        </div>
+        <div class="col-md-4">
+            <span class="kelas-lainnya">Kelas B</span>
+            <p class="pembuat-lainnya">By John Doe </p>
+            <p class="caption">Last updated XX May 2021</p>
+        </div>
+        <div class="col-md-2 d-flex">
+            <h5 class="harga">IDR 35.000,00</h5>
+            <i class="fas fa-share-square icon-caption"></i>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container-footer mt-4 text-white">
+    <div class="container">
+      <div class="row align-items-baseline">
+        <div class="col-md-3">
+          <h5 class="title-footer">Kampus Indonesia Academy</h5>
+          <p class="desc-footer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, quae.</p>
+          <p class="desc-footer">anonym@gmail.com</p>
+          <div class="row text-center ">
+            <div class="d-flex">
+                <div class="circle-footer">
+                    <i class="fab fa-facebook-f custom-footer"></i>
+                </div>
+                <div class="circle-footer">
+                    <i class="fab fa-linkedin-in custom-footer"></i>
+                </div>
+              <div class="circle-footer">
+                  <i class="fab fa-instagram custom-footer"></i>
+              </div>
+              <div class="circle-footer">
+                  <i class="fab fa-twitter custom-footer"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <p class="title-footer-footer">Informasi</p>
+          <span class="desc-footer">
+            <p>
+              <a 
+                >Tentang Kami</a
+              >
+            </p>
+            <p>
+              <a
+                >Internship</a
+              >
+            </p>
+            <p>
+              <a
+                >Terms & Conditions</a
+              >
+            </p>
+              <p>
+              <a
+                >Privacy Policy</a
+              >
+            </p>
+          </span>
+        </div>
+        <div class="col-md-3">
+            <p class="title-footer-footer">Layanan</p>
+            <span class="desc-footer">
+              <p>
+                <a 
+                  >Daftar Kelas</a
+                >
+              </p>
+              <p>
+                <a
+                  >Kampus Indonesia Official</a
+                >
+              </p>
+            </span>
+          </div>
+          <div class="col-md-3">
+            <p class="title-footer-footer">Layanan</p>
+            <span class="desc-footer">
+              <p>
+                <a 
+                  >Help & Support</a
+                >
+              </p>
+              <p>
+                <a
+                  >Panduan</a
+                >
+              </p>
+            </span>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<style>
+    .pembuat-lainnya{
+        margin: 5px;
+        font-size: 1.2rem;
+    }
+     .kelas-lainnya{
+        margin: 5px;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .testimoni-detail{
+        margin: 20px;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .testimoni-detail-role{
+        margin: 0 0 20px 20px;
+        padding-bottom: 20px;
+    }
+    .rating-testimoni{
+        font-weight: 600;
+        font-size: 3.0rem;
+        color: #f7a015;
+    }
+    .progress{
+        margin: 12px;
+    }
+.avatar-testimoni {
+  border-radius: 150px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.check-list li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #000000;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+}
+    .lebih-lanjut-detail, .lebih-lanjut-testimoni{
+    display: block;
+    color: #364CBB;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    cursor: pointer;
+    user-select: none;
+    margin: 0 auto;
+    overflow: hidden;
+    max-height: 35px;
+    transition: max-height .5s ease, opacity .5s ease, visibility .5s .5s
+    }
+    input:checked ~ .lebih-lanjut-testimoni{
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+  }
+    input:checked ~ .lebih-lanjut-detail{
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+  }
+  input:checked + .detail-kelas-testimoni {
+    -webkit-line-clamp: unset;
+    max-height: 330px;
+  }
+    input:checked + .detail-kelas-desc {
+    -webkit-line-clamp: unset;
+    max-height: 330px;
+  }
+ 
+    .detail-kelas-desc, .detail-kelas-testimoni{
+    --fz: 18px;
+    --lh: 1.5;
+    --max-lines: 5;
+    font-size: var(--fz);
+    line-height: var(--lh);
+    -webkit-line-clamp: var(--max-lines);
+    max-height: calc(var(--fz) * var(--lh) * var(--max-lines));
+    display: -webkit-box;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    white-space: pre-wrap;
+	word-wrap: break-word;
+    transition: max-height .5s ease;
+    }
+     input {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  
+    .harga-detail{
+       font-weight: 600;
+       margin: 0 75px 0 5px;
+        
+    }
+    .icon-caption-harga{
+        margin: 20px;
+    }
+    .icon-caption-detail{
+        margin: 10px 0px 0px 20px;
+        padding: 7px 125px;
+    }
+    .rating-angka{
+       font-weight: 400;
+       margin:0 15px;
+    }
+    .rating{
+        padding-left:20px;
+    }
+    .checked {
+        color: orange;
+    }
+    /* Home */
+    .desc-footer{
+        font-size: 0.9rem;
+    }
+    .title-footer-footer{
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    .circle-footer {
+        background-color: #2A3D5B;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin: 10px 5px;
+        
+}
+    .title-footer{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    .container-footer{
+        background-color: #086275;
+        padding: 40px;
+    }
+    .icon-caption {
+        margin: 5px;
+    }
+
+    .lebih-lanjut {
+        margin-left: 20px;
+    }
+
+    .title-card {
+        font-weight: 600;
+        padding: 20px;
+    }
+
+    .title-home {
+        font-weight: 600;
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .small-box,
+    .small-box-footer {
+        border-radius: 20px;
+    }
+</style>

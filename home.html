@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Kampus Indonesia Academy</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="Assets/adminLTE/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Assets/adminLTE/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="Assets/AdminLTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="Assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="Assets/AdminLTE/dist/js/adminlte.min.js"></script>
+
+</head>
+
+<body class="hold-transition layout-top-nav">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+            <div class="container">
+                <button class="navbar-toggler order-1" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+                    <!-- Left navbar links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link active">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="kelas.html" class="nav-link">Kelas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="panduan.html" class="nav-link">Panduan</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Right navbar links -->
+                <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+                    <!-- Messages Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                            <div class="d-flex">
+                                <i class="fas fa-user"></i>
+                                <p>Silahkan Masuk</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                            <div class="dropdown-divider"></div>
+                            <a href="login.html" class="dropdown-item">
+                                <i class="fas fa-sign-in-alt"></i></i> Login
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="register.html" class="dropdown-item">
+                                <i class="fas fa-registered"></i> Register
+                            </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Triviea -->
+    <div class="container-trivia">
+        <div class="container">
+            <img class="img-left" src="Assets/images/image-left.png">
+            <img class="img-left-bot" src="Assets/images/image-left-bot.png.png">
+            <div class=" row align-items-center trivia">
+                <div class="col-lg-8 col-md-8">
+                    <p class="title-home">Kembangkan Potensi Karirmu bersama Kampus Indonesia Academy.</p>
+                    <p>Dapatkan kelas online terbaik untukmu disini!</p>
+                    <!-- SEARCH FORM -->
+                    <form>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control rounded-0" placeholder="Cari kelas online">
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-info btn-flat">Cari</button>
+                        </span>
+                    </div>
+                </form>
+                </div>
+                <img class="img-top" src="Assets/images/image-top.png">
+                <img class="img-bottom" src="Assets/images/image-bottom.png">
+                <div class="col-lg-4 col-md-4">
+                    <img class="img-trivia" src="Assets/images/image-1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prodouk -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="small-box bg-info">
+                    <div class="inner">
+                        <h4 class="title-card">Anda Bingung Mencari Kelas yang Cocok?</h4>
+
+                        <p class="desc-card">Kami menyediakan berbagai pilihan kelas untuk Anda disini</p>
+                        <p class="desc-card">Mulai perjalanan Anda dalam mencapai karir impian bersama kami!</p>
+                    </div>
+
+                    <a href="kelas.html" class="small-box-footer">
+                        Telusuri Kelas <i class="fas fa-arrow-circle-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <h4 class="title-carousel">Kelas Promo untuk Bulan Juni</h4>
+                <div class="card-body">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="small-box ">
+                                                <div class="inner">
+                                                    <a href="detailKelas.html">
+                                                        <img class="img-fluid mt-3" src="Assets/images/thumbnail.png"
+                                                            alt="" srcset="">
+                                                    </a>
+                                                    <h4 class="title-card">How to Become SEO Specialist</h4>
+                                                    <p class="desc-card">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Laboriosam impedit repudiandae doloremque quae
+                                                        incidunt vero sit cum blanditiis minima molestiae?</p> <label
+                                                        class="lebih-lanjut">lebih lanjut
+                                                        >></label>
+                                                    <div class="d-flex">
+                                                        <i class="fas fa-calendar-alt caption"></i>
+                                                        <p class="caption">25 Juni 2021</p>
+                                                        <p class="caption">18.00 - 20.40</p>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <i class='fas fa-money-check-alt icon-caption'></i>
+                                                        <div>
+                                                            <h5 class="harga">Rp 35.000,00</h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="d-flex justify-content-end jus align-items-center">
+                                                        <button type="button"
+                                                            class="btn btn-primary icon-caption">Daftar</button>
+                                                        <i class="fas fa-bookmark icon-caption"></i>
+                                                        <i class="fas fa-share-square icon-caption"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="small-box ">
+                                                <div class="inner">
+                                                    <a href="detailKelas.html">
+                                                        <img class="img-fluid mt-3" src="Assets/images/thumbnail.png"
+                                                            alt="" srcset="">
+                                                    </a>
+                                                    <h4 class="title-card">How to Become SEO Specialist</h4>
+                                                    <p class="desc-card">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Laboriosam impedit repudiandae doloremque quae
+                                                        incidunt vero sit cum blanditiis minima molestiae?</p> <label
+                                                        class="lebih-lanjut">lebih lanjut
+                                                        >></label>
+                                                    <div class="d-flex">
+                                                        <i class="fas fa-calendar-alt caption"></i>
+                                                        <p class="caption">25 Juni 2021</p>
+                                                        <p class="caption">18.00 - 20.40</p>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <i class='fas fa-money-check-alt icon-caption'></i>
+                                                        <div>
+                                                            <h5 class="harga">Rp 35.000,00</h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="d-flex justify-content-end jus align-items-center">
+                                                        <button type="button"
+                                                            class="btn btn-primary icon-caption">Daftar</button>
+                                                        <i class="fas fa-bookmark icon-caption"></i>
+                                                        <i class="fas fa-share-square icon-caption"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="small-box ">
+                                                <div class="inner">
+                                                    <a href="detailKelas.html">
+                                                        <img class="img-fluid mt-3" src="Assets/images/thumbnail.png"
+                                                            alt="" srcset="">
+                                                    </a>
+                                                    <h4 class="title-card">How to Become SEO Specialist</h4>
+                                                    <p class="desc-card">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Laboriosam impedit repudiandae doloremque quae
+                                                        incidunt vero sit cum blanditiis minima molestiae?</p> <label
+                                                        class="lebih-lanjut">lebih lanjut
+                                                        >></label>
+                                                    <div class="d-flex">
+                                                        <i class="fas fa-calendar-alt caption"></i>
+                                                        <p class="caption">25 Juni 2021</p>
+                                                        <p class="caption">18.00 - 20.40</p>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <i class='fas fa-money-check-alt icon-caption'></i>
+                                                        <div>
+                                                            <h5 class="harga">Rp 35.000,00</h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="d-flex justify-content-end jus align-items-center">
+                                                        <button type="button"
+                                                            class="btn btn-primary icon-caption">Daftar</button>
+                                                        <i class="fas fa-bookmark icon-caption"></i>
+                                                        <i class="fas fa-share-square icon-caption"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="small-box ">
+                                                <div class="inner">
+                                                    <a href="detailKelas.html">
+                                                        <img class="img-fluid mt-3" src="Assets/images/thumbnail.png"
+                                                            alt="" srcset="">
+                                                    </a>
+                                                    <h4 class="title-card">How to Become SEO Specialist</h4>
+                                                    <p class="desc-card">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit. Laboriosam impedit repudiandae doloremque quae
+                                                        incidunt vero sit cum blanditiis minima molestiae?</p> <label
+                                                        class="lebih-lanjut">lebih lanjut
+                                                        >></label>
+                                                    <div class="d-flex">
+                                                        <i class="fas fa-calendar-alt caption"></i>
+                                                        <p class="caption">25 Juni 2021</p>
+                                                        <p class="caption">18.00 - 20.40</p>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <i class='fas fa-money-check-alt icon-caption'></i>
+                                                        <div>
+                                                            <h5 class="harga">Rp 35.000,00</h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="d-flex justify-content-end jus align-items-center">
+                                                        <button type="button"
+                                                            class="btn btn-primary icon-caption">Daftar</button>
+                                                        <i class="fas fa-bookmark icon-caption"></i>
+                                                        <i class="fas fa-share-square icon-caption"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="container">
+        <a href="kelas.html">
+            <h4 class="title-card text-center">Kategori Kelas</h4>
+        </a>
+        <div class="row mt-3 mb-3">
+            <div class="col-md-3">
+                <img class="img-fluid img-categori" src="Assets/images/desain.png" alt="" srcset="">
+                <h4 class="title-card centered text-center text-white">Graphic Design</h4>
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid img-categori" src="Assets/images/IT.png" alt="" srcset="">
+                <h4 class="title-card centered text-center text-white">Information Technology</h4>
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid img-categori" src="Assets/images/digital marketing.png" alt="" srcset="">
+                <h4 class="title-card centered text-center text-white">Public Speaking</h4>
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid img-categori" src="Assets/images/career development-1.png" alt="" srcset="">
+                <h4 class="title-card centered text-center text-white">Career Preparation</h4>
+            </div>
+        </div>
+
+        <div class="row mt-3 mb-3">
+            <div class="col-md-3">
+                <img class="img-fluid img-categori" src="Assets/images/creative writing.png" alt="" srcset="">
+                <h4 class="title-card centered text-center text-white">Creative Writing</h4>
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid img-categori" src="Assets/images/teknik.png" alt="" srcset="">
+                <h4 class="title-card centered text-center text-white">Technical</h4>
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid img-categori" src="Assets/images/public speaking.png" alt="" srcset="">
+                <h4 class="title-card centered text-center text-white">Digital Marketing</h4>
+            </div>
+            <div class="col-md-3">
+                <img class="img-fluid img-categori" src="Assets/images/career development.png" alt="" srcset="">
+                <h4 class="title-card centered text-center text-white">Business Development</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Populer -->
+    <div class="container mt-4">
+        <a href="kelas.html">
+            <h4 class="title-card text-center">Kelas Terpopuler</h4>
+        </a>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="small-box ">
+                    <div class="inner">
+                        <img class="img-fluid mt-3" src="Assets/images/thumbnail(4).png" alt="" srcset="">
+                        <h4 class="title-card">How to Become SEO Specialist</h4>
+                        <p class="desc-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor
+                            incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam</p> <label
+                            class="lebih-lanjut">lebih lanjut
+                            >></label>
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt caption"></i>
+                            <p class="caption">25 Juni 2021</p>
+                            <p class="caption">18.00 - 20.40</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class='fas fa-money-check-alt icon-caption'></i>
+                            <div>
+                                <h5 class="harga">Rp 35.000,00</h5>
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end jus align-items-center">
+                            <button type="button" class="btn btn-primary icon-caption">Daftar</button>
+                            <i class="fas fa-bookmark icon-caption"></i>
+                            <i class="fas fa-share-square icon-caption"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="small-box ">
+                    <div class="inner">
+                        <img class="img-fluid mt-3" src="Assets/images/thumbnail(1).png" alt="" srcset="">
+                        <h4 class="title-card">How to Become Accountant</h4>
+                        <p class="desc-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor
+                            incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam</p> <label
+                            class="lebih-lanjut">lebih lanjut
+                            >></label>
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt caption"></i>
+                            <p class="caption">25 Juni 2021</p>
+                            <p class="caption">18.00 - 20.40</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class='fas fa-money-check-alt icon-caption'></i>
+                            <div>
+                                <h5 class="harga">IDR 35.000,00</h5>
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end jus align-items-center">
+                            <button type="button" class="btn btn-primary icon-caption">Daftar</button>
+                            <i class="fas fa-bookmark icon-caption"></i>
+                            <i class="fas fa-share-square icon-caption"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="small-box ">
+                    <div class="inner">
+                        <img class="img-fluid mt-3" src="Assets/images/thumbnail(2).png" alt="" srcset="">
+                        <h4 class="title-card">Podcast Speaker: A Beginner Guide</h4>
+                        <p class="desc-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor
+                            incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam</p> <label
+                            class="lebih-lanjut">lebih lanjut
+                            >></label>
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt caption"></i>
+                            <p class="caption">25 Juni 2021</p>
+                            <p class="caption">18.00 - 20.40</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class='fas fa-money-check-alt icon-caption'></i>
+                            <div>
+                                <h5 class="harga">IDR 35.000,00</h5>
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end jus align-items-center">
+                            <button type="button" class="btn btn-primary icon-caption">Daftar</button>
+                            <i class="fas fa-bookmark icon-caption"></i>
+                            <i class="fas fa-share-square icon-caption"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="small-box ">
+                    <div class="inner">
+                        <img class="img-fluid mt-3" src="Assets/images/thumbnail(8).png" alt="" srcset="">
+                        <h4 class="title-card">Level Up with Photoshop</h4>
+                        <p class="desc-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor
+                            incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam</p> <label
+                            class="lebih-lanjut">lebih lanjut
+                            >></label>
+                        <div class="d-flex">
+                            <i class="fas fa-calendar-alt caption"></i>
+                            <p class="caption">25 Juni 2021</p>
+                            <p class="caption">18.00 - 20.40</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class='fas fa-money-check-alt icon-caption'></i>
+                            <div>
+                                <h5 class="harga">IDR 35.000,00</h5>
+                            </div>
+
+                        </div>
+                        <div class="d-flex justify-content-end jus align-items-center">
+                            <button type="button" class="btn btn-primary icon-caption">Daftar</button>
+                            <i class="fas fa-bookmark icon-caption"></i>
+                            <i class="fas fa-share-square icon-caption"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mengapa Kampus Indonesia -->
+    <div class="trivia2 mt-4">
+        <img class="img-top-top" src="Assets/images/right(1).png">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-3 text-right">
+                    <h4 class="title-card">Mengapa Kampus Indonesia Academy?</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, aut! Asperiores sit
+                        molestias quaerat perferendis.</p>
+                    <div class="d-flex text-center justify-content-end">
+                        <div class="card icon-mengapa-sertiv">
+                            <i class="fas fa-certificate"></i> E-Sertifikat
+                        </div>
+                        <div class="card icon-mengapa-modul">
+                            <i class="fas fa-book"></i> Modul Materi
+                        </div>
+                    </div>
+                    <div class="d-flex text-center justify-content-end">
+                        <div class="card icon-mengapa-diskusi">
+                            <i class="fas fa-users"></i> Diskusi
+                        </div>
+                        <div class="card icon-mengapa-video">
+                            <i class="fas fa-video"></i> Video Materi
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3 text-left">
+                    <h4 class="title-card">Mengapa Kampus Indonesia Academy?</h4>
+                    <img class="img-fluid" src="Assets/images/video thumbnail.png" alt="" srcset="" width="450">
+                </div>
+            </div>
+        </div>
+        <img class="img-bottom-bottom" src="Assets/images/Ellipse 8(1).png">
+    </div>
+
+    <!-- Testimoni -->
+    <div class="container mt-4">
+        <h4 class="title-card text-center">Apa Kata Mereka?</h4>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="col-md">
+                <div class="card-body">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card card-testiomoni">
+                                                <div class="row align-items-center ">
+                                                    <div class="col-md-8">
+                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                            Temporibus, repellendus.</p>
+
+                                                        <span class="testimoni">Habib</span>
+                                                        <p class="testimoni">UI UX Designer at XYZ Company</p>
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <span class="testimoni">Peserta Kelas A.</span>
+                                                            <button type="button"
+                                                                class="btn btn-primary icon-caption">Selengkapnya</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <img class="img-fluid mt-3" src="Assets/images/Frame 10.png"
+                                                            alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card card-testiomoni">
+                                                <div class="row align-items-center ">
+                                                    <div class="col-md-8">
+                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                            Temporibus, repellendus.</p>
+
+                                                        <span class="testimoni">Habib</span>
+                                                        <p class="testimoni">UI UX Designer at XYZ Company</p>
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <span class="testimoni">Peserta Kelas A.</span>
+                                                            <button type="button"
+                                                                class="btn btn-primary icon-caption">Selengkapnya</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <img class="img-fluid mt-3" src="Assets/images/Frame 10.png"
+                                                            alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="card card-testiomoni">
+                                                <div class="row align-items-center ">
+                                                    <div class="col-md-8">
+                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                            Temporibus, repellendus.</p>
+
+                                                        <span class="testimoni">Habib</span>
+                                                        <p class="testimoni">UI UX Designer at XYZ Company</p>
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <span class="testimoni">Peserta Kelas A.</span>
+                                                            <button type="button"
+                                                                class="btn btn-primary icon-caption">Selengkapnya</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <img class="img-fluid mt-3" src="Assets/images/Frame 10.png"
+                                                            alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="card card-testiomoni">
+                                                <div class="row align-items-center ">
+                                                    <div class="col-md-8">
+                                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                                            Temporibus, repellendus.</p>
+
+                                                        <span class="testimoni">Habib</span>
+                                                        <p class="testimoni">UI UX Designer at XYZ Company</p>
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <span class="testimoni">Peserta Kelas A.</span>
+                                                            <button type="button"
+                                                                class="btn btn-primary icon-caption">Selengkapnya</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <img class="img-fluid mt-3" src="Assets/images/Frame 10.png"
+                                                            alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Komitmen -->
+    <div class="trivia-3 mt-4">
+        <div class="container text-center text-white">
+            <h4 class="title-card">Tunggu apa lagi?</h4>
+            <p class="desc-card">Siapkan diri untuk berkarir bersama kami!</p>
+            <a href="register.html" class="btn btn-light icon-caption btn-komit">Selengkapnya</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-footer text-white">
+        <div class="container">
+            <div class="row align-items-baseline">
+                <div class="col-md-3">
+                    <h5 class="title-footer">Kampus Indonesia Academy</h5>
+                    <p class="desc-footer">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, quae.</p>
+                    <p class="desc-footer">anonym@gmail.com</p>
+                    <div class="row text-center ">
+                        <div class="d-flex">
+                            <div class="circle-footer">
+                                <i class="fab fa-facebook-f custom-footer"></i>
+                            </div>
+                            <div class="circle-footer">
+                                <i class="fab fa-linkedin-in custom-footer"></i>
+                            </div>
+                            <div class="circle-footer">
+                                <i class="fab fa-instagram custom-footer"></i>
+                            </div>
+                            <div class="circle-footer">
+                                <i class="fab fa-twitter custom-footer"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p class="title-footer-footer">Informasi</p>
+                    <span class="desc-footer">
+                        <p>
+                            <a>Tentang Kami</a>
+                        </p>
+                        <p>
+                            <a>Internship</a>
+                        </p>
+                        <p>
+                            <a>Terms & Conditions</a>
+                        </p>
+                        <p>
+                            <a>Privacy Policy</a>
+                        </p>
+                    </span>
+                </div>
+                <div class="col-md-3">
+                    <p class="title-footer-footer">Layanan</p>
+                    <span class="desc-footer">
+                        <p>
+                            <a>Daftar Kelas</a>
+                        </p>
+                        <p>
+                            <a>Kampus Indonesia Official</a>
+                        </p>
+                    </span>
+                </div>
+                <div class="col-md-3">
+                    <p class="title-footer-footer">Layanan</p>
+                    <span class="desc-footer">
+                        <p>
+                            <a>Help & Support</a>
+                        </p>
+                        <p>
+                            <a>Panduan</a>
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<style>
+     /* Home */
+  .desc-footer {
+      font-size: 0.9rem;
+  }
+
+  .title-footer-footer {
+      font-weight: 500;
+      font-size: 0.9rem;
+  }
+
+  .circle-footer {
+      background-color: #2A3D5B;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      margin: 10px 5px;
+
+  }
+
+  .title-footer {
+      font-weight: 600;
+      font-size: 1.2rem;
+  }
+
+  .container-footer {
+      background-color: #086275;
+      padding: 40px;
+  }
+
+  .trivia-3 {
+      background-color: #0194B4;
+      padding: 30px;
+  }
+
+  .testimoni {
+      font-weight: 600;
+  }
+
+  .card-testiomoni {
+      padding: 20px;
+  }
+
+  .img-bottom-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      width: 5rem;
+  }
+
+  .img-top-top {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 10rem;
+  }
+
+  .trivia2 {
+      position: relative;
+  }
+
+  .icon-mengapa-video {
+      padding: 32px;
+      margin: 10px;
+  }
+
+  .icon-mengapa-diskusi {
+      padding: 30px 45px;
+      margin: 10px;
+  }
+
+  .icon-mengapa-modul {
+      padding: 30px;
+      margin: 10px;
+  }
+
+  .icon-mengapa-sertiv {
+      padding: 30px;
+      margin: 10px;
+  }
+
+  .trivia2 {
+      background-color: rgba(8, 98, 117, 0.5);
+  }
+
+  .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  .harga-coret {
+      text-decoration: line-through;
+  }
+
+  .icon-caption {
+      margin: 5px;
+  }
+
+  .lebih-lanjut {
+      margin-left: 20px;
+  }
+
+  .caption {
+      margin: 5px;
+      color: blue;
+  }
+
+  .title-carousel {
+      font-weight: 600;
+      padding: 0px 0px 0px 20px;
+  }
+
+  .title-card {
+      font-weight: 600;
+      padding: 20px;
+  }
+
+  .desc-card {
+      font-weight: 400;
+      padding: 0 0 20px 20px;
+      --fz: 14px;
+      --lh: 1.7;
+      --max-lines: 3;
+      -webkit-line-clamp: var(--max-lines);
+      max-height: calc(var(--fz) * var(--lh) * var(--max-lines));
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+
+  }
+
+  .title-home {
+      font-weight: 600;
+      font-size: 2.3rem;
+      line-height: 1.2;
+  }
+
+  .img-left {
+      position: absolute;
+      left: 0;
+      top: 1;
+      z-index: -1;
+      width: 12rem;
+  }
+
+  .img-left-bot {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      width: 9rem;
+  }
+
+  .img-top {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      width: 8rem;
+  }
+
+  .img-bottom {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+      width: 12rem;
+  }
+
+  .img-trivia {
+      height: 280px;
+      object-fit: cover;
+  }
+
+  .container-trivia {
+      position: relative;
+  }
+
+  .small-box,
+  .small-box-footer {
+      border-radius: 20px;
+  }
+</style>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>	
+
+<div id="pestContainer"></div>
+  <!-- Model -->
+<div class="modal hide">
+  <div class="modal-content">
+    <h1 ></h1><br>
+    <span class="close">&times;</span>
+    <p ></p>
+    "Assets/images/thumbnail(4).png"
+  </div>
+</div>
+
+</body>
+</html>
+
+<script>
+    const pestInfo = [
+{ "name":"wasp", "text":"Flying pest", "img":"thumbnail(4).png", "info":"Yellow stripes"}
+]
+const pestContainer = document.getElementById("pestContainer");
+pestContainer.innerHTML = pestInfo
+  .map(({name,text,img, info},i) => `<div class="cards" data-idx="${i}">
+    <h4 class="name">${name}</h4>
+    <p><img src= "Assets/images/${img}"/><p class="text">${text}</p>
+  </div>`);
+
+</script>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Kampus Indonesia Academy</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="Assets/adminLTE/plugins/fontawesome-free/css/all.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Assets/adminLTE/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- jQuery -->
+    <script src="Assets/AdminLTE/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="Assets/AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="Assets/AdminLTE/dist/js/adminlte.min.js"></script>
+    
+</head>
+<body class="body-login">
+      <!-- Triviea -->
+<div class="container-login-trivia">
+    <div class="container">
+        <img class="img-left" src="Assets/images/login-top.png">
+    </div>
+        <div class=" row align-items-center trivia">
+            <div class="col-md-6 login-text">
+                <p class="title-login">Kembangkan Potensi Karirmu bersama Kampus Indonesia Academy</p>
+                <img class="img-left-bot" src="Assets/images/login-top2.png">
+            </div>
+            <img class="img-login-bot" src="Assets/images/login.png" width="500">
+          
+            
+            <div class="col-md-6 login-input">
+                <p class="title-home text-center text-primary">Halo, Selamat Datang !</p>
+                <p class="text-center">Jelajahi beragam kelas yang menarik bersama kami</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="exampleInputEmail1">Nama Depan</label>
+                        <input type="text" class="form-control" id="exampleInputText1" placeholder="Masukan Nama Depan">
+                    </div>   
+                    <div class="col-md-6">
+                        <label for="exampleInputEmail1">Nama Belakang</label>
+                        <input type="text" class="form-control" id="exampleInputText2" placeholder="Masukan Nama Belakang">
+                    </div>               
+                </div>
+                <!-- email -->
+                <label class="mt-2" for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Masukan email">
+                <!-- password -->
+                <label class="mt-2" for="exampleInputEmail1">Password</label>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Masukan password" id="id_password" >
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="far fa-eye" id="togglePassword"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- nomor -->
+                <label class="mt-2" for="inputNumber">Nomor handphone</label>
+                <input type="number" class="form-control" id="exampleInputTelepon" placeholder="Masukan handphone">
+                <!-- gender -->
+                <label class="mt-2" for="gender">Pilih Gender</label>
+                    <select class="form-control select2" style="width: 100%;">
+                      <option selected="selected">Pilih Gender</option>
+                      <option>Laki-laki</option>
+                      <option>Perempuan</option>
+                    </select>
+                   <div class="d-flex mt-4 justify-content-center">
+                    <a href="home.html" class="btn login-back">Kembali</a>
+                    <a href="#" class="btn btn-primary login-btn">Register</a>
+                   </div>
+                   <p class="text-center">Sudah punya akun? <a href="login.html">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+ 
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+</script>
+<style>
+    .login-btn{
+        background-color: #364CBB;
+        color: white;
+        margin: 5px;
+    }
+    .login-back{
+        border: solid 1px #364CBB;
+        color: #364CBB;
+        margin: 5px;
+    }
+    .login-input{
+        background-color: white;
+        padding: 20px;
+    }
+    .body-login{
+        background-color: rgb(242, 240, 240);
+    }
+    .login-text{
+        margin-bottom: 25rem;
+        /* background-color: rgb(242, 240, 240) */
+    }
+    .border-login{
+        background-color: rgb(242, 240, 240);
+    }
+    .trivia-3{
+        background-color: #0194B4;
+        padding: 30px;
+    }
+    .testimoni{
+        font-weight: 600;
+    }
+    .card-testiomoni{
+        padding: 20px;
+    }
+    .img-bottom-bottom{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 5rem;
+    }
+    .img-top-top{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10rem;
+    }
+    .trivia2{
+        position: relative;
+    }
+    .icon-mengapa-video{
+        padding: 32px;
+        margin: 10px;
+    }
+    .icon-mengapa-diskusi{
+        padding: 30px 45px;
+        margin: 10px;
+    }
+    .icon-mengapa-modul{
+        padding: 30px;
+        margin: 10px;
+    }
+    .icon-mengapa-sertiv{
+        padding: 30px;
+        margin: 10px;
+    }
+    .trivia2 {
+        background-color: rgba(8, 98, 117, 0.5);
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .harga-coret {
+        text-decoration: line-through;
+    }
+
+    .icon-caption {
+        margin: 5px;
+    }
+
+    .lebih-lanjut {
+        margin-left: 20px;
+    }
+
+    .caption {
+        margin: 5px;
+        color: blue;
+    }
+
+    .title-carousel {
+        font-weight: 600;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .title-card {
+        font-weight: 600;
+        padding: 20px;
+    }
+
+    .desc-card {
+        font-weight: 400;
+        padding: 0 0 20px 20px;
+        --fz: 14px;
+        --lh: 1.7;
+        --max-lines: 3;
+        -webkit-line-clamp: var(--max-lines);
+        max-height: calc(var(--fz) * var(--lh) * var(--max-lines));
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+
+    }
+    .title-login{
+        font-weight: 600;
+        font-size: 2rem;
+        margin: 5rem;
+    }
+
+    .title-home {
+        font-weight: 600;
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .img-left {
+        position: absolute;
+        left: 0;
+        top: 1;
+        z-index: -1;
+        width: 5rem;
+    }
+    .img-login-bot{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -5;
+        width: 40rem;
+    }
+
+    .img-left-bot {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 5rem;
+    }
+
+    .img-top {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        width: 8rem;
+    }
+
+    .img-bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        width: 12rem;
+    }
+
+    .img-trivia {
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .container-login-trivia {
+        position: relative;
+        /* background-color: rgb(242, 240, 240); */
+    }
+
+    .small-box,
+    .small-box-footer {
+        border-radius: 20px;
+    }
+  
+</style>
